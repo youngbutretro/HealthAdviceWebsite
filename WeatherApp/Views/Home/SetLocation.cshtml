@@ -1,0 +1,23 @@
+﻿@model Location
+
+<form asp-controller="Home" asp-action="SetLocationSubmit">
+    <FONT COLOR="white ">
+    <h1>Weather Information</h1>
+    <div class="form-group row">
+        <label for="" class="col-4 col-form-label"><p1>Please enter a location:</p1></label>
+        <div class="col-8">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                        <i class="fa fa-address-card"></i>
+                    </div>
+                </div>
+                <input asp-for="location" type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="offset-7 col-6">
+            <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+</form>

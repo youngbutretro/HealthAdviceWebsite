@@ -1,0 +1,30 @@
+﻿@model Root
+
+
+<FONT COLOR="white ">
+ <center>
+<h2>@Model.resolvedAddress</h2>
+
+<h2>@Model.days[0].datetime</h2>
+
+<h3>Current Temperature: @Model.days[0].temp°C</h3>
+<h3>Min: @Model.days[0].tempmin°C</h3>
+<h3>Max: @Model.days[0].tempmax°C</h3>
+<h3>Humidity: @Model.days[0].humidity%</h3>
+<h3>Precipitation: @Model.days[0].precip Millimeters</h3>
+
+
+
+<iframe 
+    width="800" 
+    height="600" 
+    frameborder="0" 
+    scrolling="no" 
+    marginheight="0" 
+    marginwidth="0" 
+    id="gmap_canvas" 
+    src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=@Model.resolvedAddress%20UK%20+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    </center>
+
+
+
